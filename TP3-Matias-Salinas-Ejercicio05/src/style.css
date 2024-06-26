@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+h1{
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    color: #2fb166;
+    padding: 1rem;
+}
+body{
+    background-color: #fdf0d5;
+opacity: 1;
+background-size: 20px 20px;
+background-image:  repeating-linear-gradient(0deg, #003049, #003049 1px, #fdf0d5 1px, #fdf0d5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    width: 66vw;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12rem;
+    row-gap: 3rem;
+}
+.carta{
+
+    background-color: #2fb166;
+    width: 12rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #3A5743;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #000000;
+}
+.cartaHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
+
+    padding: 0.5rem;
+    background-color: #FCEC52;
+    border-radius: 8px;
+    font-weight: 700;
+    
+}
+.cartaId{
+    background-color: #B80C09;
+    border-radius: 50%;
+    position:relative;
+    width: 1.2rem;
+    text-align: center;
+    color: #FFF;
+}
+.cartaImagen{
+    flex-grow: 6;
+    box-shadow: 1px 1px 6px #000000;
+    border-radius: 6px;
+}
+.cartaInfo{
+    box-shadow: 0px -1px 3px #000000;
+    font-size: small;
+    overflow-y:hidden;
+    overflow-x: hidden;
+    padding: 0.5rem;
+    flex-grow: 3;
+    background-color:#3B7080 ;
+    border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: #a7e0b4;
+}
+.fotoPerfil{
+    max-width: 100%;
+}
+p{
+    font-size: medium;
+    color: #Fff;
+}
+
+.cartas{
+    display: flex;
+    align-items: start;
+    
+}
+.botonTareas{
+    all: unset;
+    position:relative;
+    right:4rem;
+    top: 3rem;
+    background-color: #FCEC52;
+    height: 3rem;
+    width: 3rem;
+    color: #B80C09;
+    font-size: small;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #000000;
+}
+.botonTareas:hover{
+    scale: 1.1;
+    box-shadow: 1px 1px 6px #000000;
+}
+.tareas{
+    position: absolute;
+
+    width: 14rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border: 2px solid #129490;
+    color: #000000;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    z-index: 1;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 1px 4px 4px #000;
+}
+.escondido{
+    all:unset;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.tareaRelativo{
+    right: 3rem;
+    position: relative;
+    width: 0;
+    height: 0;
+}
